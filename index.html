@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Astrology Insights  by Deepanshu Sharma ji</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Cosmic Astrology Insights  by Deepanshu Sharma ji</h1>
+            <p>Unlock the secrets of the stars. Enter your details to reveal your personalized horoscope.</p>
+        </header>
+        
+        <form id="astro-form">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="birthdate">Birth Date:</label>
+                <input type="date" id="birthdate" required>
+            </div>
+            <div class="form-group">
+                <label for="birthtime">Birth Time (optional):</label>
+                <input type="time" id="birthtime">
+            </div>
+            <button type="submit">Generate Report</button>
+        </form>
+        
+        <div id="report" class="hidden">
+            <h2>Your Astrology Report</h2>
+            <div class="report-section">
+                <h3>Personal Details</h3>
+                <p><strong>Name:</strong> <span id="report-name"></span></p>
+                <p><strong>Current Age:</strong> <span id="report-age"></span></p>
+                <p><strong>Zodiac Sign:</strong> <span id="report-zodiac"></span></p>
+            </div>
+            <div class="report-section">
+                <h3>Future Health Issues</h3>
+                <p id="health-issues">Potential concerns: Watch for stress-related issues as well as heart,lungs related issues. you will have a poor immune system so maintain a balanced diet and exercise regularly.</p>
+            </div>
+            <div class="report-section">
+                <h3>Future Path Scope</h3>
+                <p id="future-path">Career outlook: Opportunities in creative fields like design and arts.There is a lot of  struggle  and hardwork in your future prospectus of government jobs . you have to stay focused and work on networking and skill-building for long-term success. For better and easy money you should try in fields related education,health,CID</p>
+                
+            </div>
+            <div class="report-section">
+                <h3>This couples of months Future</h3>
+                <p id="year-future"> You will not have attachment to anyone and people will have a feeling of enmity towards you. You will suffer from a sense of insecurity. You will waste your time and money in unnecessary activities. You may have to work for others. The expenses will be huge. Opponents will keep you stressed. Avoid trips as far as possible. Take care of health otherwise problems will arise</p>
+            </div>
+            <div class="report-section">
+                <h3>Mangalik Status</h3>
+                <p id="mangalik-status"><b>Mangalik: UCCH Mangalik dosh</b> </p>
+            </div>
+            <div class="report-section">
+                <h3>Best Recommendations</h3>
+                <p><strong>Year:</strong> <span id="best-year">2024,2026,2029</span></p>
+                <p><strong>Day:</strong> <span id="best-date">wed,thu,sat</span></p>
+                <p><strong>Color:</strong> <span id="best-color">Embrodary based blue and pink Color</span></p>
+            </div>
+            <div class="report-section">
+                <h3>Days to Avoid</h3>
+                <p id="avoid-days">Tuesdays : Avoid major decisions or travel on these days.</p>
+                <h3>Date to Avoid</h3>
+                <p id="avoid-date"> 3,8,13</p>
+            </div>
+            <div class="report-section">
+                <h3>Upai (Remedies for Better Life)</h3>
+                <p id="upai">Chant "Om Shanti" daily. Wear a blue gemstone and meditate for 10 minutes to enhance positivity.</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
